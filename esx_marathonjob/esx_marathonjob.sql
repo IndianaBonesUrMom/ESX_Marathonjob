@@ -1,6 +1,6 @@
 
-INSERT INTO `jobs` (`id`, `name`, `label`) VALUES
-(NULL, 'runner', 'Maratoonari');
+INSERT INTO `jobs` (`name`, `label`) VALUES
+('runner', 'Maratoonari');
 
 
 CREATE TABLE `marathon_times` (
@@ -11,13 +11,13 @@ CREATE TABLE `marathon_times` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
-INSERT INTO `items` (`id`, `name`, `label`, `limit`, `rare`, `can_remove`) VALUES 
-(NULL, 'goldmedal_run', 'Juoksun kultamitali', '-1', '0', '1'),
-(NULL, 'silvermedal_run', 'Juoksun hopeamitali', '-1', '0', '1'),
-(NULL, 'bronzemedal_run', 'Juoksun pronssimitali', '-1', '0', '1'),
+INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`) VALUES 
+('goldmedal_run', 'Juoksun kultamitali', '-1', '0', '1'),
+('silvermedal_run', 'Juoksun hopeamitali', '-1', '0', '1'),
+('bronzemedal_run', 'Juoksun pronssimitali', '-1', '0', '1'),
 
-INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
-(NULL, 'runner', 0, 'employee', 'Urheilija', 135, '{
+INSERT INTO `job_grades` (`job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
+('runner', 0, 'employee', 'Urheilija', 135, '{
 	"shoes": 10,
 	"glasses_1": 15,
 	"torso_1": 152,
